@@ -13,7 +13,12 @@
     <nav class="fixed top-0 w-full bg-gray-800 bg-opacity-90 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold">Rainer Drummond</div>
-            <ul class="flex space-x-6">
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <ul id="menu" class="hidden md:flex space-x-6">
                 <li><a href="#hero" class="hover:text-blue-400">Home</a></li>
                 <li><a href="#about" class="hover:text-blue-400">Sobre</a></li>
                 <li><a href="#skills" class="hover:text-blue-400">Habilidades</a></li>
@@ -38,7 +43,7 @@
     <section id="carousel" class="py-20">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-10">Projetos</h2>
-            <div class="flex overflow-x-auto space-x-4">
+            <div class="flex overflow-x-auto space-x-4 justify-center">
                 <div class="shrink-0 w-80 bg-gray-800 p-4 rounded">
                     <img src="project1.jpg" alt="Get Now" class="w-full h-48 object-cover rounded mb-4">
                     <h3 class="text-xl font-bold">Get Now</h3>
@@ -50,7 +55,7 @@
                     <p>Aplicativo de gateway de pagamento e banco usando Next.js, React e Node.js.</p>
                 </div>
                 <div class="shrink-0 w-80 bg-gray-800 p-4 rounded">
-                    <img src="profile.jpg" alt="SeerCard" class="w-full h-48 object-cover rounded mb-4">
+                    <img src="https://rainerdrummond.com/_next/image?url=%2Fprojects%2FSerCard%2FLandingPage%2Flanding%20page.png&w=1920&q=75" alt="SeerCard" class="w-full h-48 object-cover rounded mb-4">
                     <h3 class="text-xl font-bold">SeerCard</h3>
                     <p>Plataforma fintech usando React, Next.js, Node.js e TypeScript.</p>
                 </div>
