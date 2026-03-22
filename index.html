@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Rainer Drummond</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-800 bg-opacity-90 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Rainer Drummond</div>
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400">Sobre</a></li>
+                <li><a href="#skills" class="hover:text-blue-400">Habilidades</a></li>
+                <li><a href="#services" class="hover:text-blue-400">Serviços</a></li>
+                <li><a href="#contact" class="hover:text-blue-400">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900">
+        <div class="text-center">
+            <img src="profile.jpg" alt="Rainer Drummond" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h1 class="text-5xl font-bold mb-4">Olá, eu sou Rainer Drummond</h1>
+            <p class="text-xl mb-8">Desenvolvedor Full Stack</p>
+            <a href="#carousel" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section id="carousel" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Projetos</h2>
+            <div class="flex overflow-x-auto space-x-4">
+                <div class="shrink-0 w-80 bg-gray-800 p-4 rounded">
+                    <img src="project1.jpg" alt="Get Now" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold">Get Now</h3>
+                    <p>Plataforma digital de produtos usando Next.js, React, React Native e Node.js.</p>
+                </div>
+                <div class="shrink-0 w-80 bg-gray-800 p-4 rounded">
+                    <img src="project2.jpg" alt="Get Pay" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold">Get Pay</h3>
+                    <p>Aplicativo de gateway de pagamento e banco usando Next.js, React e Node.js.</p>
+                </div>
+                <div class="shrink-0 w-80 bg-gray-800 p-4 rounded">
+                    <img src="profile.jpg" alt="SeerCard" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold">SeerCard</h3>
+                    <p>Plataforma fintech usando React, Next.js, Node.js e TypeScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Depoimentos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-700 p-6 rounded">
+                    <p class="text-lg mb-4">"Trabalhei com Rainer no nosso último projeto, onde ele foi o líder do front-end. Além de dominar React, Next.js, TypeScript e Tailwind, ele tem uma visão clara de produto e foco total na experiência do usuário. Ele reestruturou todo o front-end, implementando melhores práticas que melhoraram muito o desempenho e a organização do código. Profissional técnico, ágil e com forte capacidade de liderança."</p>
+                    <p class="font-bold">- Matheus Cardoso, Desenvolvedor Full Stack</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded">
+                    <p class="text-lg mb-4">"Tive o prazer de trabalhar com Rainer na mesma equipe e seu comportamento profissional é exemplar. Como QA e PO, valorizo muito desenvolvedores que não apenas entregam código, mas também se preocupam com a experiência do usuário e a qualidade final. Rainer é sempre proativo, resolve problemas de forma rápida e eficaz, e tem uma incrível capacidade de propor soluções práticas para desafios complexos do Front-end. Ele é um profissional criativo, habilidoso e um parceiro de equipe excepcional!"</p>
+                    <p class="font-bold">- Fernanda Bucci, Engenheira de QA</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded">
+                    <p class="text-lg mb-4">"Tive a oportunidade de trabalhar com Rainer Drummond nos projetos Seercard e Get Now, onde ele atuou como desenvolvedor front-end construindo módulos e interfaces. Rainer é muito consistente no que entrega. Tem grande consciência de usabilidade, atenção aos detalhes e cuidado em transformar requisitos em interfaces claras e funcionais. Além disso, é fácil trabalhar com ele: comunica bem, entende rapidamente o que precisa ser feito e sempre busca soluções práticas. É um profissional comprometido, confiável e que realmente se preocupa com a qualidade do front-end. Recomendo com confiança para qualquer equipe que precise de um desenvolvedor front-end sólido e colaborativo."</p>
+                    <p class="font-bold">- Hugo Amorim, Engenheiro de Software</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded">
+                    <p class="text-lg mb-4">"Tive o prazer de trabalhar com Rainer no GetNow, onde ele atuou como meu supervisor. Durante esse tempo, pude aprender muito com sua forma clara e objetiva de liderar a equipe, sempre equilibrando qualidade técnica, organização e foco em resultados. Rainer se destaca pela capacidade de guiar com precisão, fornecer feedback construtivo e criar um ambiente de trabalho colaborativo onde o crescimento profissional acontece naturalmente. Sua liderança fez uma diferença real no meu desenvolvimento técnico e na forma como abordo desafios no dia a dia. Recomendo fortemente Rainer como líder e profissional, alguém que agrega valor real à equipe e aos projetos em que se envolve."</p>
+                    <p class="font-bold">- Daniel Ricardo, Desenvolvedor Full Stack</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Sobre Mim</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-lg mb-6">Oi, eu sou Rainer — um Designer e Engenheiro Frontend do Brasil com mais de 5 anos de experiência. Minha jornada começou no design, e isso moldou completamente a forma como desenvolvo: penso em interfaces antes do código, valorizo a clareza visual e priorizo experiências perfeitas.</p>
+                <p class="text-lg mb-6">Nos últimos anos, fiz parte de projetos de alto impacto no setor financeiro, incluindo um sistema de gestão que processou mais de 375.000 transações. Essa experiência reforçou minha atenção à arquitetura, performance, qualidade do código e consistência de interface.</p>
+                <p class="text-lg mb-6">Meu foco é transformar ideias em produtos reais, combinando meu background em Design e UX com desenvolvimento Frontend avançado, melhores práticas de código limpo e componentização, além de experiência em integração de APIs e desenvolvimento back-end com Node.</p>
+                <p class="text-lg">Busco contribuir para equipes que valorizam qualidade, colaboração e inovação — entregando soluções que são visualmente sólidas, tecnicamente robustas e verdadeiramente úteis para os usuários.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Habilidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-js-square text-4xl text-yellow-500 mb-2"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-js-square text-4xl text-blue-600 mb-2"></i>
+                    <p>TypeScript</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
+                    <p>React</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-code text-4xl text-black mb-2"></i>
+                    <p>Next.js</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-mobile-alt text-4xl text-purple-500 mb-2"></i>
+                    <p>React Native</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-database text-4xl text-blue-700 mb-2"></i>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-palette text-4xl text-pink-500 mb-2"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-git-alt text-4xl text-red-500 mb-2"></i>
+                    <p>Git</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fab fa-github text-4xl text-gray-300 mb-2"></i>
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded text-center">
+                    <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Desenvolvimento Web</h3>
+                    <p>Crio sites e aplicações web responsivas e modernas usando as melhores práticas e tecnologias atuais.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded text-center">
+                    <i class="fas fa-mobile-alt text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Desenvolvimento Mobile</h3>
+                    <p>Desenvolvo aplicativos móveis nativos e híbridos para iOS e Android com React Native.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded text-center">
+                    <i class="fas fa-server text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Backend & APIs</h3>
+                    <p>Construo APIs robustas e sistemas backend escaláveis com Node.js, Python e bancos de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Contato</h2>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Nome" class="w-full p-2 mb-4 bg-gray-700 rounded">
+                <input type="email" placeholder="Email" class="w-full p-2 mb-4 bg-gray-700 rounded">
+                <textarea placeholder="Mensagem" class="w-full p-2 mb-4 bg-gray-700 rounded"></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-900 text-center">
+        <p>&copy; 2024 Rainer Drummond. Todos os direitos reservados.</p>
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="https://github.com/rainergb" class="hover:text-blue-400"><i class="fab fa-github text-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/rainer-drummond" class="hover:text-blue-400"><i class="fab fa-linkedin text-2xl"></i></a>
+            <a href="mailto:rainergabriel70@gmail.com" class="hover:text-blue-400"><i class="fas fa-envelope text-2xl"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

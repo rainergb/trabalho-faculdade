@@ -1,0 +1,26 @@
+/* Estilos adicionais para o portfólio */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gradual Blur effect - simplificado */
+.gradual-blur {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    pointer-events: none;
+}
+
+/* Animações simples */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
