@@ -22,12 +22,47 @@ if (carousel) {
     setInterval(scrollRight, 3000);
 }
 
-// Formulário de contato - simulação
-const contactForm = document.querySelector('#contact form');
+// Formulário de contato - validação
+const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Mensagem enviada! (Simulação)');
+        
+        // Limpar erros anteriores
+        document.getElementById('name-error').textContent = '';
+        document.getElementById('email-error').textContent = '';
+        document.getElementById('message-error').textContent = '';
+        
+        let valid = true;
+        
+        // Validar nome
+        const name = document.getElementById('name').value.trim();
+        if (!name) {
+            document.getElementById('name-error').textContent = 'Nome é obrigatório';
+            valid = false;
+        }
+        
+        // Validar email
+        const email = document.getElementById('email').value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailRegex.test(email)) {
+            document.getElementById('email-error').textContent = 'Email inválido';
+            valid = false;
+        }
+        
+        // Validar mensagem
+        const message = document.getElementById('message').value.trim();
+        if (!message) {
+            document.getElementById('message-error').textContent = 'Mensagem é obrigatória';
+            valid = false;
+        }
+        
+        // Se válido, mostrar confirmação
+        if (valid) {
+            alert('Mensagem enviada com sucesso!');
+            // Limpar formulário
+            contactForm.reset();
+        }
     });
 }
 

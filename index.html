@@ -21,6 +21,7 @@
             <ul id="menu" class="hidden md:flex space-x-6">
                 <li><a href="#hero" class="hover:text-blue-400">Home</a></li>
                 <li><a href="#about" class="hover:text-blue-400">Sobre</a></li>
+                <li><a href="#education" class="hover:text-blue-400">Formação</a></li>
                 <li><a href="#skills" class="hover:text-blue-400">Habilidades</a></li>
                 <li><a href="#services" class="hover:text-blue-400">Serviços</a></li>
                 <li><a href="#contact" class="hover:text-blue-400">Contato</a></li>
@@ -97,6 +98,27 @@
                 <p class="text-lg mb-6">Nos últimos anos, fiz parte de projetos de alto impacto no setor financeiro, incluindo um sistema de gestão que processou mais de 375.000 transações. Essa experiência reforçou minha atenção à arquitetura, performance, qualidade do código e consistência de interface.</p>
                 <p class="text-lg mb-6">Meu foco é transformar ideias em produtos reais, combinando meu background em Design e UX com desenvolvimento Frontend avançado, melhores práticas de código limpo e componentização, além de experiência em integração de APIs e desenvolvimento back-end com Node.</p>
                 <p class="text-lg">Busco contribuir para equipes que valorizam qualidade, colaboração e inovação — entregando soluções que são visualmente sólidas, tecnicamente robustas e verdadeiramente úteis para os usuários.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Formação</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-700 p-6 rounded mb-4">
+                    <h3 class="text-xl font-bold">Engenharia de Software</h3>
+                    <p class="text-gray-300">UNINTER</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded mb-4">
+                    <h3 class="text-xl font-bold">UX/UI</h3>
+                    <p class="text-gray-300">EBAC</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded">
+                    <h3 class="text-xl font-bold">Inglês Avançado</h3>
+                    <p class="text-gray-300">Proficiência avançada em inglês</p>
+                </div>
             </div>
         </div>
     </section>
@@ -186,10 +208,19 @@
     <section id="contact" class="py-20 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-10">Contato</h2>
-            <form class="max-w-md mx-auto">
-                <input type="text" placeholder="Nome" class="w-full p-2 mb-4 bg-gray-700 rounded">
-                <input type="email" placeholder="Email" class="w-full p-2 mb-4 bg-gray-700 rounded">
-                <textarea placeholder="Mensagem" class="w-full p-2 mb-4 bg-gray-700 rounded"></textarea>
+            <form class="max-w-md mx-auto" id="contact-form">
+                <div class="mb-4">
+                    <input type="text" placeholder="Nome" class="w-full p-2 bg-gray-700 rounded" id="name">
+                    <span class="error text-red-500 text-sm" id="name-error"></span>
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full p-2 bg-gray-700 rounded" id="email">
+                    <span class="error text-red-500 text-sm" id="email-error"></span>
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Mensagem" class="w-full p-2 bg-gray-700 rounded" id="message"></textarea>
+                    <span class="error text-red-500 text-sm" id="message-error"></span>
+                </div>
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enviar</button>
             </form>
         </div>
